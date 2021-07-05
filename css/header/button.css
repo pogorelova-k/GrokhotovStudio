@@ -1,0 +1,49 @@
+
+.header__button {
+    margin-top: -45px;
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 72px;
+    background: #F45549;
+    border: none;
+}
+
+.button span::before,
+.button span::after {
+    content: '';
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    right: 50%; margin-right: -22.5px;
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.button span::after {
+    transform: translateY(5px);
+}
+
+.button span::before {
+    transform: translateY(-5px);
+}
+
+.button:hover {
+    background: #FFFFFF;
+    
+}
+.button:hover span:after, 
+.button:hover span:before {
+    background-color: #F45549;
+}
+
+.header__button:hover span::after {
+    width: 25px;
+}
+
+
+

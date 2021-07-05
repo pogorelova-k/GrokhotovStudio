@@ -1,0 +1,26 @@
+.file {
+    height: 28px;
+    margin-bottom: 80px;
+}
+
+.file .file__button {
+    width: 200px;
+    background-color: inherit;
+    border: none;
+}
+
+.file .file__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inerit;
+}
+
+.file__button .button__text {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #191B1D;
+}

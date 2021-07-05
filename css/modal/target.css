@@ -1,0 +1,43 @@
+.target__list {
+    margin-bottom: 60px;
+}
+
+.target__item {
+	display: inline-block;
+	margin: 0 20px 20px 0;
+	user-select: none;
+	position: relative;
+}
+
+.target__item input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.target__item span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 15px 22px;
+	line-height: 30px;
+	border-radius: 27px;
+	transition: background 0.2s ease;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #F9F9F9;
+    color: #555759;
+}
+
+.target__item input[type=checkbox]:checked + span {
+	background: #F45549;
+    color: #fff;
+}
+
+.target__item input[type=checkbox]:hover + span {
+	background: #F45549;
+    color: #fff;
+}
+

@@ -1,0 +1,34 @@
+.close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 30px;
+}
+
+.close span::before,
+.close span::after {
+    content: '';
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    right: 50%; margin-right: -30px;
+    width: 60px;
+    height: 2px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.close span::after {
+    transform: rotate(45deg);
+}
+
+.close span::before {
+    transform: rotate(-45deg);
+}
+
+.close:hover span::after {
+    transform: rotate(225deg);
+}
+
+.close:hover span::before {
+    transform: rotate(135deg);
+}

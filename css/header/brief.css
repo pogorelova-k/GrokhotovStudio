@@ -1,0 +1,9 @@
+.brief__link {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.brief__link:hover {
+    text-decoration: underline;
+}
+

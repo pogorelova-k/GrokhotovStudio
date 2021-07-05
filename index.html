@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grokhotov Studio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./dist/bundle.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo header__logo">
+            <img src="./image/logo.svg" alt="Логотип" class="logo__image">
+        </div>
+        <nav class="menu header__menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Проекты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Блог</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="brief header__brief">
+            <a href="#" class="brief__link">Заполнить бриф</a>
+        </div>
+        <div class="header__button">
+            <a class="button">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <div class="hero">
+        <h1 class="main-title hero__title">Наши услуги</h1>
+        <ol class="services hero__list">
+            <li class="service services__item">
+                <h2 class="service__title">Дизайн</h2>
+                <span class="service__description">Решает бизнес-задачи, создавая продуманную структуруи проработывая карту продукта. </span>
+            </li>
+            <li class="service services__item">
+                <h2 class="service__title">Брендинг</h2>
+                <span class="service__description">Cоздание уникальности и узнаваемости компании для целостность бизнеса, которая помогает решать бизнес-задачи.</span>
+            </li>
+            <li class="service services__item">
+                <h2 class="service__title">Разработка</h2>
+                <span class="service__description">Оживляет проект изнутри, чтобы весь продуманный на этапе дизайна функционал корректно работал.</span>
+            </li>
+            <li class="service services__item">
+                <h2 class="service__title">Продвижение</h2>
+                <span class="service__description">Перед запуском проекта необходимо чтобы целевая аудитория узнала о продукте и компании.</span>
+            </li>
+            <li class="service services__item">
+                <h2 class="service__title">Поддержка</h2>
+                <span class="service__description">Хороший и развивающий в digital-среде продукт требует особого внимания, чтобы быть всегда актуальными. </span>
+            </li>
+        </ol>
+    </div>
+    <div class="responsibility">
+        <div class="responsible-about responsibility__about">О нашем подходе</div>
+        <div class="responsible-description responsibility__description">
+            Мы создаем не просто продукты,<br>
+            <span>а бизнес  решения.</span> Хорошо построенная стратегия и тактика необходимы в долгосрочной перспективе. Мы <span>работаем на результат</span>, 
+            а не создаем видимость работы.
+        </div>
+    </div>
+    <form class="modal">
+        <div class="modal__body">
+            <div class="modal-content modal-content__content">
+                <a href="" class="close modal__close"><span></span></a>
+                <h3 class="modal-content__title">У Вас есть<br> интересный проект?</h3>
+                <div class="callback modal-content__calback">
+                    Оставьте заявку, либо свяжитесь с нами<br> и мы сами всё вместе заполним: 
+                    <a href="tel:+78123095758">+7 (812) 309 57 58</a>
+                </div>
+                <!-- /.callback -->
+                <div class="target modal-content__target">
+                    <p class="modal__title">Меня интересует:</p>
+                    <div class="target__list">
+                        <label class="target__item">
+                            <input type="checkbox"   name="branding">
+                            <span>Брендинг</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="website design">
+                            <span>Дизайн сайта</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Project support or revision">
+                            <span>Поддержка или доработка проекта</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="HTML/CSS">
+                            <span>HTML/CSS верстка</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Development">
+                            <span>Разработка</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Design concept">
+                            <span>Дизайн-концепт</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Turnkey website">
+                            <span>Сайт под ключ</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Application design">
+                            <span>Дизайн приложения</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Turnkey website 2">
+                            <span>Сайт под ключ</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Application design 2">
+                            <span>Дизайн приложения</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Product promotion">
+                            <span>Продвижение продукта</span>
+                        </label>
+                        <label class="target__item">
+                            <input type="checkbox"   name="Other">
+                            <span>Другое</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- /.target -->
+                <div class="budget modal-content__budget">
+                    <p class="modal__title">Какой у вас бюджет?</p>
+                    <div class="budget__list">
+                        <div class="budget__item">
+                            <input id="radio-1" type="radio" name="radio" value="до 200 000 р">
+                            <label for="radio-1">до 200 000 ₽ </label>
+                        </div>
+                        <div class="budget__item">
+                            <input id="radio-2" type="radio" name="radio" value="200 000 ₽ — 400 000₽">
+                            <label for="radio-2">200 000 ₽ — 400 000₽ </label>
+                        </div>
+                        <div class="budget__item">
+                            <input id="radio-3" type="radio" name="radio" value="400 000 ₽ — 700 000₽">
+                            <label for="radio-3">400 000 ₽ — 700 000₽ </label>
+                        </div>
+                        <div class="budget__item">
+                            <input id="radio-4" type="radio" name="radio" value="700 000 ₽ —  1000 000₽ ">
+                            <label for="radio-4">700 000 ₽ —  1000 000₽ </label>
+                        </div>
+                        <div class="budget__item">
+                            <input id="radio-5" type="radio" name="radio" value="От 1000 000₽ ">
+                            <label for="radio-5">От 1000 000₽ </label>
+                        </div>
+                        <div class="budget__item">
+                            <input id="radio-6" type="radio" name="radio" value="don't know">
+                            <label for="radio-6">Не знаю</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.budget -->
+                <input type="text" name="message" class="task modal-content__task" placeholder="В чем заключается задача?" required>
+                <div class="file modal-content__file">
+                    <input type="file" name="file" class="file__input" hidden>
+                    <button type="button" class="file__button">
+                        <img src="./image/paperclip.svg" alt="Скрепка">
+                        <span class="button__text">Прикрепить файл</span>
+                    </button>
+                </div>
+                <div class="person">
+                    <input type="text" name="name" class="person__name person-input" placeholder="Ваше имя" required>
+                    <input type="text" name="company" class="person__company person-input" placeholder="Название компании" required>
+                    <input type="tel" name="phone" class="person__phone person-input" placeholder="Телефон" required>
+                    <input type="email" name="email" class="person__email person-input" placeholder="E-mail" required>
+                </div>
+                <button type="submit" class="submit modal-content__button">ОТПРАВИТЬ ЗАЯВКУ</button>
+                <p class="agreement  modal-content__agreement">Нажимая на кнопку «Отправить заявку», Вы даете согласие<br/>на обработку своих <a href="#">персональных данных</a></p>
+                </div>
+            <!-- /.modal-content -->
+        </div>
+    </form>
+</body>
+</html>

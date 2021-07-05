@@ -1,0 +1,36 @@
+.budget__list {
+    margin-bottom: 50px;
+}
+
+.budget__item {
+	display: inline-block;
+	margin-right: 20px;
+    margin-bottom: 20px;
+}
+.budget__item input[type=radio] {
+	display: none;
+}
+.budget__item label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 15px 22px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    background: #F9F9F9;
+    color: #555759;
+	line-height: 34px;
+	border-radius: 27px;
+	user-select: none;
+    transition: background 0.2s ease;
+}
+
+.budget__item input[type=radio]:checked + label {
+	background: #F45549;
+    color: #fff;
+}
+
+.budget__item label:hover {
+	background: #F45549;
+    color: #fff;
+}

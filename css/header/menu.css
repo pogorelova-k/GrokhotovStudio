@@ -1,0 +1,19 @@
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link:hover:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #F45549; 
+    color: #F45549;
+}
