@@ -1,0 +1,46 @@
+@import './secondary/secondary';
+@import './secondary/color';
+@import './secondary/dark_theme';
+
+.target__list {
+    margin-bottom: $mb + 30;
+}
+
+.target__item {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    user-select: none;
+    position: relative;
+
+    span {
+        display: inline-block;
+        cursor: pointer;
+        padding: 15px 22px;
+        line-height: $lh + 6;
+        border-radius: 27px;
+        transition: background 0.2s ease;
+        font-size: $fz - 2;
+        text-align: center;
+        letter-spacing: $ls;
+        background: #F9F9F9;
+        color: $neutral;
+    }
+
+    input[type=checkbox] {
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+
+        &:checked+span {
+            @include dark_theme;
+        }
+
+        &:hover+span {
+            @include dark_theme;
+        }
+    }
+
+
+}

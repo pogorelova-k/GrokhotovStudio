@@ -1,0 +1,78 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.header {
+    @include flex;
+    margin-top: 27px;
+    margin-left: 50px;
+}
+
+.header__button {
+    margin-top: -45px;
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 72px;
+    background: $primary-color;
+
+    span {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: $mt - 101;
+            right: 50%;
+            margin-right: -22.5px;
+            width: 45px;
+            height: 2px;
+            background-color: $secondary-color;
+            transition: 0.5s;
+            @include translateY(-5px);
+        }
+
+        &::after {
+            @extend span::before;
+            @include translateY(5px);
+        }
+    }
+
+    &:hover {
+        background: $secondary-color;
+
+        span {
+            &:before {
+                background-color: $primary-color;
+            }
+
+            &:after {
+                @extend span:before;
+            }
+
+            &::after {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.brief__link {
+    font-size: $fz - 3;
+    line-height: $lh - 3;
+}
+
+.brief__link:hover {
+    text-decoration: $td;
+}
+@media screen {
+    @media (max-width: 480px) {
+        .brief__link {
+            display: none;
+        }
+    }
+}
+
+
+@import './menu';

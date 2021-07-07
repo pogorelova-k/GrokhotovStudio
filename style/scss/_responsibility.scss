@@ -1,0 +1,27 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.responsibility {
+    margin-top: $mt - 9;
+    @include padding(0,0,0,143);
+}
+
+.responsible-about {
+    position: absolute;
+    font-size: $fz;
+    line-height: $lh - 7;
+    letter-spacing: $ls;
+    @include ff-normal;
+}
+
+.responsible-description {
+    text-indent: 5em;
+    font-size: $fz + 37;
+    line-height: $lh * 3;
+    letter-spacing: $ls;
+    margin-bottom: $mb + 115;
+
+    span {
+        color: $primary-color;
+    }
+}

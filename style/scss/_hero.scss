@@ -1,0 +1,83 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.hero {
+    @include block;
+    @include padding(0,172,0,172);
+    margin-top: $mt;
+}
+
+.main-title {
+    font-size: $fz + 52;
+    line-height: $lh + 65;
+    letter-spacing: $ls;
+    margin-bottom: $mb + 60;
+}
+
+.services {
+    counter-reset: myCounter;
+    @include flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    max-width: 470px;
+    margin-bottom: $mb+30;
+}
+
+.service:before {
+    position: absolute;
+    counter-increment: myCounter;
+    content: '0'counter(myCounter);
+    @include block;
+    margin-left: -35px;
+    margin-top: $mt - 95;
+    font-size: $fz - 4;
+    line-height: $lh - 7;
+    color: $primary-color;
+}
+
+.service__title {
+    font-size: $fz + 37;
+    line-height: $lh + 36;
+    letter-spacing: $ls;
+    margin-bottom: $mb - 10;
+    height: 60px;
+
+    &:hover {
+        border-bottom: 2px solid $secondary-color;
+        display: table;
+    }
+}
+
+.service__description {
+    @include ff-normal;
+    font-size: $fz - 2;
+    line-height: $lh;
+    letter-spacing: $ls + 0.02;
+}
+
+@media screen{
+    @media (max-width: 1024px) {
+        .hero {
+            @include padding(0, 60, 0, 60);
+        }
+        .main-title {
+            font-size: 50px;
+        }
+        .service__title {
+            font-size: 40px;
+        }
+    }
+    @media (max-width: 480px) {
+        .main-title {
+            font-size: 45px;
+        }
+        .hero {
+            @include padding(0, 40, 0, 40);
+        }
+        .service__title {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.person-input {
+    width: 100%;
+    margin-bottom: $mb - 10;
+    padding: 21px 19px;
+    background: #F9F9F9;
+    border: none;
+}

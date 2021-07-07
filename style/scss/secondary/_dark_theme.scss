@@ -1,0 +1,5 @@
+@import './color';
+@mixin dark_theme {
+    background-color: $primary-color;
+    color: $secondary-color;
+}

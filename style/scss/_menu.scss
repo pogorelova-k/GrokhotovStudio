@@ -1,0 +1,29 @@
+@import './secondary/secondary';
+@import './scss/secondary/color';
+
+.menu__list {
+    @include flex;
+    width: 400px;
+
+    .menu__item {
+        position: relative;
+    }
+
+    .menu__link:hover:after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: $primary-color;
+    }
+}
+
+@media screen {
+    .menu {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+

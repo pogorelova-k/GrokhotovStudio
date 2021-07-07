@@ -1,0 +1,27 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.file {
+    height: 28px;
+    margin-bottom: $mb + 50;
+}
+
+.file .file__button {
+    width: 200px;
+    background-color: inherit;
+    border: none;
+}
+
+.file .file__button {
+    @include flex;
+    background-color: inerit;
+}
+
+.file__button .button__text {
+    font-size: $fz - 1;
+    line-height: $lh + 6;
+    text-align: center;
+    letter-spacing: $ls;
+    text-decoration-line: underline;
+    color: $neutrayDark;
+}

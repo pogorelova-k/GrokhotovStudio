@@ -1,0 +1,5 @@
+@import './color';
+@mixin light_theme {
+    background-color: $secondary-color;
+    color: $primary-color;
+}

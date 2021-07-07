@@ -1,0 +1,44 @@
+@import './secondary/secondary';
+@import './secondary/color';
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 30px;
+
+    span {
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -1px;
+            right: 50%;
+            margin-right: -30px;
+            width: 60px;
+            height: 2px;
+            background-color: #000;
+            transition: 0.5s;
+        }
+
+        &::after {
+            @include rotate(45);
+        }   
+
+        &::before {
+            @include rotate(-45);
+        }
+    }
+
+    &:hover {
+        span {
+            &::after {
+                @include rotate(225);
+            }
+
+            &::before {
+                @include rotate(135);
+            }
+        }
+    }
+}

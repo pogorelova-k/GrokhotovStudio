@@ -1,0 +1,45 @@
+
+
+$ff-primary: 'Stem', sans-serif;
+$ff-secondary: 'Stem-normal', sans-serif;
+$fw-normal: 300; //font-weight
+$fw-medium: 500;
+$fz : 18px; //font-size
+$lh: 22px; //line-height
+$ls: 0.03em; //letter-spacing
+$td: underline; //text-decoration
+$mt: 100px; //margin-top
+$mb: 30px;
+
+@mixin ff-normal {
+    font-family: $ff-secondary;
+    font-weight: $fw-normal;
+}
+
+@mixin ff-medium {
+    font-family: $ff-primary;
+    font-weight: $fw-medium;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin block {
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin translateY($val) {
+    transform: translateY($val);
+}
+@mixin rotate($val) {
+    transform: rotate($val#{deg});
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    padding: $top#{px} $right#{px} $bottom#{px} $left#{px};
+}
+
